@@ -7,6 +7,7 @@
     if ('textContent' in Element.prototype) {
       _rules.getElementsByTagName('legend')[0].textContent = 'Prove yourself worthy!';
       _rules.getElementsByTagName('form')[0].removeAttribute('disabled');
+      
     } else {
       _rules.getElementsByTagName('legend')[0].innerText = 'Prove yourself worthy!';
       _rules.getElementsByTagName('form')[0].removeAttribute('disabled');
@@ -30,7 +31,7 @@
 
         if (elem.name && required_fields[elem.name] && !elem.value && elem.type && (/^(?:text(?:area)?|password|file)$/i.test(elem.type))){
           alert('"' + required_fields[elem.name] + '" is a required field in this form.');
-	        elem.focus();
+          elem.focus();
           return false;
 
         } else if(doc.getElementsByName('071115020F2A4F838D379A82DF1C5C92')[0].value !== (win._rnd1 + win._rnd2).toString()){
