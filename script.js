@@ -29,12 +29,12 @@
       for (var i = 0; i < the_form.length; ++i) {
         var elem = the_form.elements[i];
 
-        if (elem.name && required_fields[elem.name] && !elem.value && elem.type && (/^(?:text(?:area)?|password|file)$/i.test(elem.type))){
+        if (elem.name && required_fields[elem.name] && !elem.value && elem.type && (/^(?:text(?:area)?|password|file)$/i.test(elem.type))) {
           alert('"' + required_fields[elem.name] + '" is a required field in this form.');
           elem.focus();
           return false;
 
-        } else if(doc.getElementsByName('071115020F2A4F838D379A82DF1C5C92')[0].value !== (win._rnd1 + win._rnd2).toString()){
+        } else if(doc.getElementsByName('071115020F2A4F838D379A82DF1C5C92')[0].value !== (win._rnd1 + win._rnd2).toString()) {
           alert('Answer is incorrect');
           elem.focus();
           win._rnd1 = win.Math.floor(win.Math.random() * (100 - 1 + 1)) + 1;
